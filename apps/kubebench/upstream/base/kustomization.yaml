@@ -16,8 +16,8 @@ configMapGenerator:
   - params.env
 images:
   # NOTE: the image for workflow agent should be configured in config-map.yaml
-  - name:  gcr.io/kubeflow-images-public/kubebench/kubebench-operator-v1alpha2
-    newName: gcr.io/kubeflow-images-public/kubebench/kubebench-operator-v1alpha2
+  - name:  10.0.8.8:8088/kubeflow/kubebench-operator-v1alpha2
+    newName: 10.0.8.8:8088/kubeflow/kubebench-operator-v1alpha2
     newTag: bc682c1
 vars:
 - name: clusterDomain

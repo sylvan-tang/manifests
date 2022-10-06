@@ -75,7 +75,7 @@ spec:
               key: secretkey
         - name: PIPELINE_RUNTIME
           value: tekton
-        image: gcr.io/ml-pipeline/api-server:dummy
+        image: 10.0.8.8:8088/kubeflow/ml-pipeline-api-server:dummy
         imagePullPolicy: Always
         name: ml-pipeline-api-server
         ports:

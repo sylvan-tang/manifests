@@ -178,7 +178,7 @@ spec:
       containers:
         - name: filter
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/broker/filter@sha256:f4bda104202557a75fce024329fc1f0e2d4ac43f4362007ed4201290f79c1d82
+          image: 10.0.8.8:8088/kubeflow/knative.dev-eventing-cmd-broker-filter:v1.5-branch-1
           readinessProbe:
             failureThreshold: 3
             httpGet:
@@ -295,7 +295,7 @@ spec:
       containers:
         - name: ingress
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/broker/ingress@sha256:1bbbdea02b6fc01f316addefe56fa33f583cd332d7213cbc2e4937234bfc3d1b
+          image: 10.0.8.8:8088/kubeflow/knative.dev-eventing-cmd-broker-ingress:v1.5-branch
           readinessProbe:
             failureThreshold: 3
             httpGet:
@@ -421,7 +421,7 @@ spec:
       containers:
         - name: mt-broker-controller
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/mtchannel_broker@sha256:90e2b9413519d0634508ff848180fb50a341da09e53ac0408848f0663c7c8c3b
+          image: 10.0.8.8:8088/kubeflow/knative-mtchannel-broker:v1.5-branch
           resources:
             requests:
               cpu: 100m

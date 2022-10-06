@@ -18,7 +18,7 @@ spec:
         configMap:
           name: kubebench-config
       containers:
-      - image: gcr.io/kubeflow-images-public/kubebench/kubebench-operator-v1alpha2
+      - image: 10.0.8.8:8088/kubeflow/kubebench-operator-v1alpha2
         name: kubebench-operator
         command:
         - /app/kubebench-operator-v1alpha2

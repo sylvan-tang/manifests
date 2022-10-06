@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: main
-        image: gcr.io/ml-pipeline/cache-deployer:dummy
+        image: 10.0.8.8:8088/kubeflow/ml-pipeline-cache-deployer:dummy
         imagePullPolicy: Always
         env:
         - name: NAMESPACE_TO_WATCH

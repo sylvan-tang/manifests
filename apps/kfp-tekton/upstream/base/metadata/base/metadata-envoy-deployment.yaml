@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: container
-        image: gcr.io/ml-pipeline/metadata-envoy:dummy
+        image: 10.0.8.8:8088/kubeflow/ml-pipeline-metadata-envoy:dummy
         ports:
         - name: md-envoy
           containerPort: 9090
