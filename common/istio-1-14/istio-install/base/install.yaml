@@ -3356,7 +3356,7 @@ spec:
           value: "false"
         - name: CLUSTER_ID
           value: Kubernetes
-        image: gcr.io/arrikto/istio/pilot:1.14.1-1-g19df463bb
+        image: 10.0.8.8:8088/kubeflow/cf2313ce56c050c2a7ace226fe33713f:2022-10-07
         imagePullPolicy: IfNotPresent
         name: discovery
         ports:

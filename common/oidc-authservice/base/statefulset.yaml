@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: authservice
-        image: gcr.io/arrikto/kubeflow/oidc-authservice:6ac9400
+        image: 10.0.8.8:8088/kubeflow/91482a1c7c6b848caf20964090ed8558:2022-10-07
         imagePullPolicy: Always
         ports:
         - name: http-api

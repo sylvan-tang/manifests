@@ -254,7 +254,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: controller
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:a602de59eab2140a9a7639e221b777aa1bd5b9b4203e09dacdc32850f4414e4f
+          image: 10.0.8.8:8088/kubeflow/245e47b78cfe5e4de15e02075d4e57b2:2022-10-07
           env:
             - name: WEBHOOK_NAME
               value: inmemorychannel-webhook
@@ -271,7 +271,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
             - name: DISPATCHER_IMAGE
-              value: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:cd4502677aedc0779be980c5e7186cdc8e7557a036048480f8a3431ec1b3b873
+              value: 10.0.8.8:8088/kubeflow/fa350e8b553f4b1930e207865b13e501:2022-10-07
             - name: POD_NAME
               valueFrom:
                 fieldRef:
@@ -398,7 +398,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: dispatcher
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:cd4502677aedc0779be980c5e7186cdc8e7557a036048480f8a3431ec1b3b873
+          image: 10.0.8.8:8088/kubeflow/fa350e8b553f4b1930e207865b13e501:2022-10-07
           readinessProbe:
             failureThreshold: 3
             httpGet:

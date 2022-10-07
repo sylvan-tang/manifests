@@ -36,7 +36,7 @@ spec:
         - -metrics-port=10254
         - -metrics-endpoint=/metrics
         - -metrics-prefix=
-        image: gcr.io/spark-operator/spark-operator:v1beta2-1.1.0-2.4.5
+        image: 10.0.8.8:8088/kubeflow/1f043f1a6bcc159547cf318ac4f082b7:2022-10-07
         imagePullPolicy: IfNotPresent
         name: sparkoperator
         ports:
