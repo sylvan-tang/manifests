@@ -21,7 +21,7 @@ spec:
       restartPolicy: OnFailure
       containers:
         - name: migrate
-          image: gcr.io/knative-releases/knative.dev/serving/vendor/knative.dev/pkg/apiextensions/storageversion/cmd/migrate@sha256:dce9002c02d7abda2f7d4b656c28029ec172d085bb116f22936cb1e096c3d1c7
+          image: 10.0.8.8:8088/kubeflow/ee5e8248303e5f476ee03ec95be18798:2022-10-07
           args:
             - "services.serving.knative.dev"
             - "configurations.serving.knative.dev"

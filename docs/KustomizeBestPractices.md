@@ -236,7 +236,7 @@ spec:
       containers:
       - command:
         - /manager
-        image: gcr.io/kubeflow-images-public/profile-controller:v20190228-v0.4.0-rc.1-192-g1a802656-dirty-f95773
+        image: 10.0.8.8:8088/kubeflow/30fe940abacd6e4eea3fd470474f4b5e:2022-10-07
         imagePullPolicy: Always
         name: manager
       serviceAccountName: profiles-controller-service-account
@@ -256,7 +256,7 @@ spec:
       - name: manager
         command:
         - /manager
-        image: gcr.io/kubeflow-images-public/profile-controller:v20190228-v0.4.0-rc.1-192-g1a802656-dirty-f95773
+        image: 10.0.8.8:8088/kubeflow/30fe940abacd6e4eea3fd470474f4b5e:2022-10-07
         imagePullPolicy: Always
       serviceAccountName: controller-service-account
 ```

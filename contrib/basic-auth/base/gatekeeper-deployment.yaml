@@ -34,7 +34,7 @@ spec:
             secretKeyRef:
               key: passwordhash
               name: $(authSecretName)
-        image: gcr.io/kubeflow-images-public/gatekeeper:v0.5.0
+        image: 10.0.8.8:8088/kubeflow/5243b9eb9b38811c660bffd64788ded5:2022-10-07
         ports:
         - containerPort: 8085
         workingDir: /opt/kubeflow

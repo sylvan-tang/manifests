@@ -54,7 +54,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: pingsource
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/v0.22/pingsource-cleanup@sha256:837b8d5cfe38afa297d25e7aed30ec8df80f721a084d4fdcc614d65afde4c528
+          image: 10.0.8.8:8088/kubeflow/317cabb5ecaf54681812825cbab33ad8:2022-10-07
           env:
             - name: SYSTEM_NAMESPACE
               valueFrom:
@@ -107,7 +107,7 @@ spec:
       restartPolicy: OnFailure
       containers:
         - name: migrate
-          image: gcr.io/knative-releases/knative.dev/eventing/vendor/knative.dev/pkg/apiextensions/storageversion/cmd/migrate@sha256:ef150a99d5b18781746d3934f181a766b27a975cb7593d9283fbd040e9ebfe5b
+          image: 10.0.8.8:8088/kubeflow/e18f59ad473553db923668098ae006c3:2022-10-07
           args:
             - "pingsources.sources.knative.dev"
 ---

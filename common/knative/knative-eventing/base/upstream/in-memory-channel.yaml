@@ -718,7 +718,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: controller
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:904f42a768a9bc64999e7302d2bc7c1c48a08e74a82355cf57be513e6a124b82
+          image: 10.0.8.8:8088/kubeflow/842bf00ca7e998151698d13ddcb3052c:2022-10-07
           env:
             - name: CONFIG_LOGGING_NAME
               value: config-logging
@@ -731,7 +731,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
             - name: DISPATCHER_IMAGE
-              value: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:a6983f71c04619928199cc21e07ee6f1e1c87586621bc03b10c9ba1abd92bfa8
+              value: 10.0.8.8:8088/kubeflow/0e9b8ce2b40ca2b58ec7818e28d49c8d:2022-10-07
             - name: POD_NAME
               valueFrom:
                 fieldRef:
@@ -777,7 +777,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: dispatcher
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:a6983f71c04619928199cc21e07ee6f1e1c87586621bc03b10c9ba1abd92bfa8
+          image: 10.0.8.8:8088/kubeflow/0e9b8ce2b40ca2b58ec7818e28d49c8d:2022-10-07
           readinessProbe:
             failureThreshold: 3
             httpGet:

@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
         - name: workflow-controller
-          image: gcr.io/ml-pipeline/workflow-controller:v3.1.6-patch-license-compliance
+          image: 10.0.8.8:8088/kubeflow/2377459bc342c4555d11e2f0c375f592:2022-10-07
           args:
             - --configmap
             - workflow-controller-configmap

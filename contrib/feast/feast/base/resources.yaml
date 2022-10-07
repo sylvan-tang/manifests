@@ -417,7 +417,7 @@ spec:
 
       containers:
       - name: feast-core
-        image: gcr.io/kf-feast/feast-core:develop
+        image: 10.0.8.8:8088/kubeflow/e2d033f0130be3b9f26037ae65725f89:2022-10-07
         imagePullPolicy: IfNotPresent
 
         volumeMounts:
@@ -493,7 +493,7 @@ spec:
 
       containers:
       - name: feast-jobservice
-        image: gcr.io/kf-feast/feast-jobservice:develop
+        image: 10.0.8.8:8088/kubeflow/b70996030e447ebbbd38a8389833c1a9:2022-10-07
         imagePullPolicy: IfNotPresent
 
         env:
@@ -566,7 +566,7 @@ spec:
 
       containers:
       - name: feast-serving
-        image: gcr.io/kf-feast/feast-serving:develop
+        image: 10.0.8.8:8088/kubeflow/1b26e1ea72dacc3d24cab4b853d8113c:2022-10-07
         imagePullPolicy: IfNotPresent
 
         volumeMounts:

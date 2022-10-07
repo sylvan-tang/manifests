@@ -156,7 +156,7 @@ spec:
       containers:
         - name: filter
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/broker/filter@sha256:0e25aa1613a3a1779b3f7b7f863e651e5f37520a7f6808ccad2164cc2b6a9b12
+          image: 10.0.8.8:8088/kubeflow/5310abf72fe9f7dfbf2377a04ee38622:2022-10-07
           readinessProbe:
             failureThreshold: 3
             httpGet:
@@ -259,7 +259,7 @@ spec:
       containers:
         - name: ingress
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/broker/ingress@sha256:cf579f88aa2a37c240e25bb886c1ef5404e326e12c7caf571e49308612243eee
+          image: 10.0.8.8:8088/kubeflow/b95638ac444946113308ea45cde0b6c3:2022-10-07
           readinessProbe:
             failureThreshold: 3
             httpGet:

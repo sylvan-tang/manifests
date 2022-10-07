@@ -25,7 +25,7 @@ spec:
             echo "logs are hidden because volume is too excessive" &&
             /root/manager 2> /dev/null
           # A customized image with https://github.com/kubernetes-sigs/application/pull/127
-          image: gcr.io/ml-pipeline/application-crd-controller:1.0-beta-non-cluster-role
+          image: 10.0.8.8:8088/kubeflow/6e2f9c547728d521ab61fd7358746a34:2022-10-07
           imagePullPolicy: IfNotPresent
           name: manager
           env:

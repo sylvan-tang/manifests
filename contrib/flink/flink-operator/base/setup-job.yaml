@@ -25,7 +25,7 @@ spec:
             do
               bash $cert;
           done
-        image: gcr.io/flink-operator/deployer:webhook-cert
+        image: 10.0.8.8:8088/kubeflow/b503722a9716a224c72dd996ece68820:2022-10-07
         imagePullPolicy: Always
         name: create-cert
         volumeMounts:
